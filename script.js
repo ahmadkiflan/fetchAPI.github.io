@@ -45,7 +45,7 @@ document.addEventListener("click", async function (e) {
 });
 
 function getMovieDetail(imdbid) {
-  return fetch("http://www.omdbapi.com/?apikey=d34f01ee&i=" + imdbid)
+  return fetch("https://www.omdbapi.com/?apikey=d34f01ee&i=" + imdbid)
     .then((response) => {
       if (!response.ok) {
         throw new Error(response.statusText);
