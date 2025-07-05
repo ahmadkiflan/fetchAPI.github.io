@@ -10,7 +10,7 @@ searchButton.addEventListener("click", async () => {
 });
 
 function getMovies(keyword) {
-  return fetch("http://www.omdbapi.com/?apikey=d34f01ee&s=" + keyword)
+  return fetch("https://www.omdbapi.com/?apikey=d34f01ee&s=" + keyword)
     .then((response) => {
       if (!response.ok) {
         throw new Error(response.statusText);
